@@ -33,8 +33,12 @@ var GroceryList = (props) => (
   </ul>
 )
 
-var GroceryListItem = (props) => (
-  <li>{props.item}</li>
-)
+class GroceryListItem extends React.Component{
+  render() {
+    return (
+      <li>{this.props.item}</li>
+    )
+  }
+}
 
 ReactDOM.render(<App/>, document.getElementById("app"));
